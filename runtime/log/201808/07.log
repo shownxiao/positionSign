@@ -1,0 +1,1469 @@
+---------------------------------------------------------------
+[ 2018-08-07T15:15:35+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.502324s][吞吐率：1.99req/s] [内存消耗：2,740.69kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006195s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.003680s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:15:40+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.054303s][吞吐率：18.42req/s] [内存消耗：2,740.70kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013469s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001141s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:15:41+08:00 ] 0.0.0.0 POST /index/user/getInfo
+[ info ] localhost/index/user/getInfo [运行时间：0.090194s][吞吐率：11.09req/s] [内存消耗：2,747.83kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015036s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.016748s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_rank` [ RunTime:0.013314s ]
+[ sql ] [ SQL ] SELECT `completed_num` FROM `user_rank` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001098s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:15:43+08:00 ] 0.0.0.0 POST /index/user/getInfo
+[ info ] localhost/index/user/getInfo [运行时间：0.081853s][吞吐率：12.22req/s] [内存消耗：2,747.84kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014344s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.013722s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_rank` [ RunTime:0.012674s ]
+[ sql ] [ SQL ] SELECT `completed_num` FROM `user_rank` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001064s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:15:44+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.047670s][吞吐率：20.98req/s] [内存消耗：2,740.70kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005005s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001494s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:15:46+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.064823s][吞吐率：15.43req/s] [内存消耗：2,740.70kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014200s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.002007s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:17:27+08:00 ] 0.0.0.0 GET /index/index/login?code=0331j8Py0aaOch1unCNy0jHLOy01j8PC
+[ info ] localhost/index/index/login?code=0331j8Py0aaOch1unCNy0jHLOy01j8PC [运行时间：0.830908s][吞吐率：1.20req/s] [内存消耗：1,591.98kb] [文件加载：42]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0331j8Py0aaOch1unCNy0jHLOy01j8PC',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ E:\wxProjects\posSigntp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T15:18:24+08:00 ] 0.0.0.0 POST /index/user/submitInfo
+[ info ] localhost/index/user/submitInfo [运行时间：0.417889s][吞吐率：2.39req/s] [内存消耗：2,738.30kb] [文件加载：54]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'submitInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '335',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'stuName' => 'xiao',
+    'stuId' => '0902170514',
+    'stuSex' => '男',
+    'stuTel' => '10086',
+    'stuCollege' => '计算机信息类',
+    'stuClass' => 'jk1705',
+    'username' => '踏雪无痕',
+    'face' => 'https://wx.qlogo.cn/mmopen/vi_32/yEBeOZeicvRUPc6icADqYB3EstYBjlq27yNspMB5rzx8w1WuhLt9wZP7pk5G7J2zcvcrVUVsYv3IlHexFvkHhhww/132',
+    'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\User->submitInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: openid[E:\wxProjects\posSigntp5\application\index\model\User.php:23]
+---------------------------------------------------------------
+[ 2018-08-07T15:19:56+08:00 ] 0.0.0.0 POST /index/user/submitInfo
+[ info ] localhost/index/user/submitInfo [运行时间：0.127287s][吞吐率：7.86req/s] [内存消耗：2,839.20kb] [文件加载：54]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'submitInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '335',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'stuName' => 'xiao',
+    'stuId' => '0902170514',
+    'stuSex' => '男',
+    'stuTel' => '10086',
+    'stuCollege' => '计算机信息类',
+    'stuClass' => 'jk1705',
+    'username' => '踏雪无痕',
+    'face' => 'https://wx.qlogo.cn/mmopen/vi_32/yEBeOZeicvRUPc6icADqYB3EstYBjlq27yNspMB5rzx8w1WuhLt9wZP7pk5G7J2zcvcrVUVsYv3IlHexFvkHhhww/132',
+    'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\User->submitInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014546s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.014824s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001494s ]
+[ sql ] [ SQL ] UPDATE `user_info`  SET `openid`='oFzv50HGlXxCp_zEwxOlLO7h8ixE',`stuName`='xiao',`stuId`='0902170514',`stuTel`='10086',`stuSex`='男',`stuCollege`='计算机信息类',`stuClass`='jk1705'  WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.003170s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:20:47+08:00 ] 0.0.0.0 POST /index/user/submitInfo
+[ info ] localhost/index/user/submitInfo [运行时间：0.086522s][吞吐率：11.56req/s] [内存消耗：2,753.04kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'submitInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '335',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'stuName' => 'xiao',
+    'stuId' => '0902170514',
+    'stuSex' => '男',
+    'stuTel' => '10086',
+    'stuCollege' => '计算机信息类',
+    'stuClass' => 'jk1705',
+    'username' => '踏雪无痕',
+    'face' => 'https://wx.qlogo.cn/mmopen/vi_32/yEBeOZeicvRUPc6icADqYB3EstYBjlq27yNspMB5rzx8w1WuhLt9wZP7pk5G7J2zcvcrVUVsYv3IlHexFvkHhhww/132',
+    'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\User->submitInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013715s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.013687s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001199s ]
+[ sql ] [ SQL ] INSERT INTO `user_info` (`openid` , `stuName` , `stuId` , `stuTel` , `stuSex` , `stuCollege` , `stuClass`) VALUES ('oFzv50HGlXxCp_zEwxOlLO7h8ixE' , 'xiao' , '0902170514' , '10086' , '男' , '计算机信息类' , 'jk1705') [ RunTime:0.001595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_rank` [ RunTime:0.012651s ]
+[ sql ] [ SQL ] INSERT INTO `user_rank` (`sign_grade` , `openid` , `completed_num` , `username` , `face`) VALUES ('0' , 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' , 0 , '踏雪无痕' , 'https://wx.qlogo.cn/mmopen/vi_32/yEBeOZeicvRUPc6icADqYB3EstYBjlq27yNspMB5rzx8w1WuhLt9wZP7pk5G7J2zcvcrVUVsYv3IlHexFvkHhhww/132') [ RunTime:0.001145s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:22:01+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.055650s][吞吐率：17.97req/s] [内存消耗：2,741.43kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006145s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.002152s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:22:50+08:00 ] 0.0.0.0 POST /index/user/getInfo
+[ info ] localhost/index/user/getInfo [运行时间：0.109756s][吞吐率：9.11req/s] [内存消耗：2,748.35kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020814s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.017013s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_rank` [ RunTime:0.013597s ]
+[ sql ] [ SQL ] SELECT `completed_num` FROM `user_rank` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001109s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:22:55+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.057564s][吞吐率：17.37req/s] [内存消耗：2,741.43kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013673s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001671s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:24:50+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.056399s][吞吐率：17.73req/s] [内存消耗：2,741.43kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013914s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001733s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:35:53+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.061482s][吞吐率：16.26req/s] [内存消耗：2,741.43kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013771s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001162s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:36:04+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.041504s][吞吐率：24.09req/s] [内存消耗：2,741.10kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004961s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001073s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:36:13+08:00 ] 0.0.0.0 POST /index/user/getInfo
+[ info ] localhost/index/user/getInfo [运行时间：0.087319s][吞吐率：11.45req/s] [内存消耗：2,748.35kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014160s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.014958s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.003570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_rank` [ RunTime:0.014625s ]
+[ sql ] [ SQL ] SELECT `completed_num` FROM `user_rank` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001373s ]
+---------------------------------------------------------------
+[ 2018-08-07T15:36:15+08:00 ] 0.0.0.0 GET /index.php
+[ info ] localhost/index.php [运行时间：0.026457s][吞吐率：37.80req/s] [内存消耗：1,508.05kb] [文件加载：40]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T15:36:15+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.055272s][吞吐率：18.09req/s] [内存消耗：2,741.43kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013824s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001648s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:04:43+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.063429s][吞吐率：15.77req/s] [内存消耗：2,787.67kb] [文件加载：55]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014271s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.002541s ]
+[ error ] [8]未定义数组下标: 6[E:\wxProjects\posSigntp5\application\index\model\User.php:110]
+---------------------------------------------------------------
+[ 2018-08-07T16:05:44+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.046653s][吞吐率：21.43req/s] [内存消耗：2,787.73kb] [文件加载：55]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005125s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001211s ]
+[ error ] [8]未定义数组下标: 6[E:\wxProjects\posSigntp5\application\index\model\User.php:110]
+---------------------------------------------------------------
+[ 2018-08-07T16:09:09+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.057310s][吞吐率：17.45req/s] [内存消耗：2,742.85kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013655s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001199s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:10:10+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.053877s][吞吐率：18.56req/s] [内存消耗：2,742.88kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014596s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001099s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:10:35+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.055268s][吞吐率：18.09req/s] [内存消耗：2,742.88kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013687s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001724s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:10:54+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.045987s][吞吐率：21.75req/s] [内存消耗：2,742.88kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004590s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001491s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:11:32+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.057414s][吞吐率：17.42req/s] [内存消耗：2,742.84kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013912s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001083s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:14:15+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.049811s][吞吐率：20.08req/s] [内存消耗：2,743.05kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004926s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001051s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:16:00+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.055773s][吞吐率：17.93req/s] [内存消耗：2,743.03kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013923s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001788s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:16:38+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.059404s][吞吐率：16.83req/s] [内存消耗：2,742.94kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013539s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001450s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:17:44+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.055955s][吞吐率：17.87req/s] [内存消耗：2,742.88kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013446s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001691s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:18:45+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.055733s][吞吐率：17.94req/s] [内存消耗：2,742.88kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013191s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001493s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:18:54+08:00 ] 0.0.0.0 GET /index/index/login?code=03377kqp1M2AMq0amGop1fN9qp177kq6
+[ info ] localhost/index/index/login?code=03377kqp1M2AMq0amGop1fN9qp177kq6 [运行时间：0.399180s][吞吐率：2.51req/s] [内存消耗：1,591.98kb] [文件加载：42]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'code' => '03377kqp1M2AMq0amGop1fN9qp177kq6',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ E:\wxProjects\posSigntp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T16:18:58+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.053235s][吞吐率：18.78req/s] [内存消耗：2,743.06kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006267s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001707s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:22:05+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.049497s][吞吐率：20.20req/s] [内存消耗：2,743.44kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004624s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001133s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:23:04+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.054648s][吞吐率：18.30req/s] [内存消耗：2,743.40kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013275s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001097s ]
+---------------------------------------------------------------
+[ 2018-08-07T16:24:31+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.049986s][吞吐率：20.01req/s] [内存消耗：2,743.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:65450',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005840s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001082s ]
+---------------------------------------------------------------
+[ 2018-08-07T21:57:01+08:00 ] 0.0.0.0 GET /index/index/login?code=033Jvzit0l7aGd1Xrwgt08OPit0Jvzix
+[ info ] localhost/index/index/login?code=033Jvzit0l7aGd1Xrwgt08OPit0Jvzix [运行时间：1.032085s][吞吐率：0.97req/s] [内存消耗：1,591.98kb] [文件加载：42]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033Jvzit0l7aGd1Xrwgt08OPit0Jvzix',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ E:\wxProjects\posSigntp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T21:57:31+08:00 ] 0.0.0.0 POST /index/user/getInfo
+[ info ] localhost/index/user/getInfo [运行时间：0.200985s][吞吐率：4.98req/s] [内存消耗：2,737.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:50347',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012127s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.016907s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_rank` [ RunTime:0.013643s ]
+[ sql ] [ SQL ] SELECT `completed_num` FROM `user_rank` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001512s ]
+---------------------------------------------------------------
+[ 2018-08-07T21:58:33+08:00 ] 0.0.0.0 GET /index.php
+[ info ] localhost/index.php [运行时间：0.407106s][吞吐率：2.46req/s] [内存消耗：1,640.48kb] [文件加载：46]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 60 seconds exceeded[x��T�n�F~�H��h�%i�RW�8ƃ���2?v�=��ԇ�Hb�RߠH�a.g��]�&�N��P|��}r���������ۍ{7���?\'w7��r{7�N_��t:y���~:�����L���7!���b�X�ltV���cS��.�<���ot�l�(iSC�k[2�aJ��YCr��2R�Z��eX�2K=�FK�D^bk4%�[��ǝ� ��kMMC_�o���}�iWG�+]K�%���N��<��ʯV�c�y�-�����u�E��3Cs��x�_�l5�����E9���yѬ�
+Ξ)�y�]�⥐p<C��S�4����KT�[�|�T8gV�R��E�=�����Oa��؛3ˈ��BIi�w_:kװ7�m)��⽷��C��[�H{����G�� �Q�5�؃���)(Z
+c�F�;8�x�2����b�n�Ԉ�k��N�ɡ�`�q�6���Y+�����G�Td��
+�K��x��Y��s���ಳ�G�6�R���}��K��K"����!p�0mA��bܫD����ԗ1��x�̆��C<�~أ�8�1x���.��^x����%�-R�49�#ht�;4��X�Y�1�$�XW�(s��3�/|gX Cn����ֻ��H0�/��ןh�:W��=��w��Yb���8[T�Țݠ吋��e�W�������7�~�*��>5�O��)�T����h��m@/Ј�nk�߫\�N�b�>Y�L����G��s�������+E[����H�F<����ow�7�ݮ4L����<��`�X�������E�~��{��9@���-�x>��j�~/�{�|�
+���8���C��~Í�[1hҬR�ƞؐl�sݡr�����5f8���q/��	�:�J�~n�y��S4�/�{��wҏ:�5/��A��nA?�Z()���ߏl��P��~\�x]�k�Nno���Q�(13) : eval()'d code(1) : eval()'d code:7]
+---------------------------------------------------------------
+[ 2018-08-07T22:17:14+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.084494s][吞吐率：11.84req/s] [内存消耗：2,744.32kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:50347',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006732s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.002983s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.018420s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001437s ]
+---------------------------------------------------------------
+[ 2018-08-07T22:17:34+08:00 ] 0.0.0.0 POST /index/user/getInfo
+[ info ] localhost/index/user/getInfo [运行时间：0.078640s][吞吐率：12.72req/s] [内存消耗：2,742.04kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:50347',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005217s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.016322s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_rank` [ RunTime:0.013737s ]
+[ sql ] [ SQL ] SELECT `completed_num` FROM `user_rank` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001855s ]
+---------------------------------------------------------------
+[ 2018-08-07T22:53:09+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.062720s][吞吐率：15.94req/s] [内存消耗：2,744.32kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:50347',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007269s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.002331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.009954s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001465s ]
+---------------------------------------------------------------
+[ 2018-08-07T22:53:15+08:00 ] 0.0.0.0 POST /index/user/getRankInfo
+[ info ] localhost/index/user/getRankInfo [运行时间：0.067211s][吞吐率：14.88req/s] [内存消耗：2,744.32kb] [文件加载：51]
+[ info ] [ LANG ] E:\wxProjects\posSigntp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getRankInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:50347',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1804120 MicroMessenger/6.5.7 Language/zh_CN webview/',
+  'content-type' => 'application/json',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx73d5034bff091768/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oFzv50HGlXxCp_zEwxOlLO7h8ixE',
+)
+[ info ] [ RUN ] app\index\controller\User->getRankInfo[ E:\wxProjects\posSigntp5\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015462s ] mysql:host=127.0.0.1;port=3306;dbname=positionsign;charset=utf8
+[ sql ] [ SQL ] select username,face,openid,sign_grade,completed_num,(@ranknum:=@ranknum+1) as rank from user_rank,(select (@ranknum :=0) ) b  order by sign_grade desc [ RunTime:0.001838s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_info` [ RunTime:0.010086s ]
+[ sql ] [ SQL ] SELECT * FROM `user_info` WHERE  `openid` = 'oFzv50HGlXxCp_zEwxOlLO7h8ixE' [ RunTime:0.001403s ]
