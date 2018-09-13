@@ -1,0 +1,29 @@
+<!--Pages/questions/questions.wxml-->
+<view class='bg'>
+    <image class='bg-image' src='../../Images/bg-questions.png'></image>
+</view>
+<view class='container w-8 h-8'>
+    <view class='input-box row'>
+        <view class='col-5 font-1'>标题：</view>
+        <view class='col-7'>
+            <input data-id='caption' bindinput='setValue' placeholder-class='placeholder' placeholder='请输入标题'></input>
+        </view>
+    </view>
+    <view class='input-box row'>
+        <view class='col-5 font-1'>联系方式：</view>
+        <view class='col-7'>
+            <input data-id='phone' bindinput='setValue' placeholder-class='placeholder'  placeholder='请输入手机号'></input>
+        </view>
+    </view>
+    <view class='row'>
+        <view class='col '>
+            <textarea data-id='content' bindinput='setValue' class='textarea' placeholder-class='placeholder' placeholder='请输入问题详情'></textarea>
+        </view>
+    </view>
+    <view class='row'>
+        <view class='col center'>
+            <view class='button font-1' bindtap='submit'>提交</view>
+        </view>
+    </view>
+
+</view>

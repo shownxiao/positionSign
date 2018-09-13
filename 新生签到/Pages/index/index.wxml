@@ -1,0 +1,166 @@
+<view class='bg'>
+    <image class='bg-image' src='../../Images/bg-index.png'></image>
+</view>
+<view class='container'>
+    <view class='cube-0'>
+        <view class='title-box'>
+            <view wx:for='{{titles}}' wx:key='{{index}}'>
+                <view bindtap='changeTag' class='title' style='{{item.style}}' data-index='{{index}}'>
+                    <view>{{item.name}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='cube-1'>
+        <view class='page-1-box' hidden='{{!pagedata.page_1.show}}'>
+            <picker class='sign-position-selector' mode='selector' range='{{pagedata.page_1.location_list}}' bindchange='page_1_selector_change'>
+                <text style='display: inline;'>点击选择签到地点</text>
+            </picker>
+            <view wx:if='{{pagedata.page_1.will_sign_position >= 0}}'>当前选择：{{pagedata.page_1.location_list[pagedata.page_1.will_sign_position]}}</view>
+        </view>
+        <view class='logo-box' hidden='{{!pagedata.page_2.show}}'>
+            <image class='logo' src='../../Images/logo.png'></image>
+            <view class='completed_number'>已打卡地点数：{{pagedata.page_2.info.completed_location_num}}</view>
+        </view>
+        <view class='list-box' hidden='{{!pagedata.page_4.show}}'>
+            <image class='list-image' mode='widthFix' src='../../Images/list.png'></image>
+        </view>
+        <view class='welcome-box' hidden='{{!pagedata.page_5.show}}'>
+            <image class='welcome-image' mode='widthFix' src='../../Images/welcome.png'></image>
+        </view>
+        <view class='intro-title' hidden='{{!pagedata.page_6.show}}'>
+            <image mode='widthFix' src='../../Images/page-6-title.jpg'></image>
+        </view>
+    </view>
+    <view class='cube-2'>
+        <image hidden='{{!pagedata.page_2.show}}' src='../../Images/item-index-1.png'></image>
+        <image hidden='{{!pagedata.page_3.show && !pagedata.page_4.show && !pagedata.page_5.show && !pagedata.page_6.show}}' src='../../Images/item-index-2.png'></image>
+        <image hidden='{{!pagedata.page_1.show}}' src='../../Images/item-index-dashed-2.png'></image>
+        <view class='box' hidden='{{!pagedata.page_1.show}}'>
+            <image class='image' src='../../Images/gift.png'></image>
+
+            <view class='sign-button' bindtap='page_1_sign'>签到</view>
+        </view>
+        <view class='info-box' hidden='{{!pagedata.page_2.show}}'>
+            <view class='info-text'>姓名：{{pagedata.page_2.info.stuName}}</view>
+            <view class='info-text'>学号：{{pagedata.page_2.info.stuId}}</view>
+            <view class='info-text'>性别：{{pagedata.page_2.info.stuSex}}</view>
+            <view class='info-text'>电话：{{pagedata.page_2.info.stuTel}}</view>
+            <view class='info-text'>学院：{{pagedata.page_2.info.stuCollege}}</view>
+            <view class='info-text'>班级：{{pagedata.page_2.info.stuClass}}</view>
+        </view>
+        <view class='list-scroll' hidden='{{!pagedata.page_4.show}}'>
+            <scroll-view class='scroll-4' scroll-y='true' lower-threshold='50' bindscrolltolower='page_4_lazy_load'>
+                <view wx:for='{{pagedata.page_4.list}}' wx:key='{{index}}' class='list-row'>
+                    <image wx:if='{{index<=2}}' class='icon' src='../../Images/{{index+1}}.png'></image>
+                    <view wx:if='{{index>2}}' class='list-num'>{{index+1}}</view>
+                    <image class='face' src='{{item.face}}'></image>
+                    <view class='username'>{{item.username}}</view>
+                    <view class='completed-text'>总分：{{item.sign_grade}}</view>
+                </view>
+                <view class='list-row'></view>
+                <view class='self-row'>
+                    <image wx:if='{{pagedata.page_4.user_rankInfo.rank<=2}}' class='icon' src='../../Images/{{pagedata.page_4.user_rankInfo.rank}}.png'></image>
+                    <view wx:if='{{pagedata.page_4.user_rankInfo.rank>2}}' class='list-num'>{{pagedata.page_4.user_rankInfo.rank}}</view>
+                    <image class='face' src='{{pagedata.page_4.user_rankInfo.face}}'></image>
+                    <view class='username'>{{pagedata.page_4.user_rankInfo.username}}</view>
+                    <view class='completed-text'>总分：{{pagedata.page_4.user_rankInfo.sign_grade}}</view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class='form-box'  hidden='{{!pagedata.page_5.show}}'>
+            <view class='input-row'>
+                <view class='input-title'>
+                    <image class='input-icon' mode='widthFix' src='../../Images/name.png'></image>
+                    <view>姓名</view>
+                </view>
+                <view class='input-area'>
+                    <input bindinput='setValue' data-id='stuName' placeholder='请输入姓名' placeholder-class='input-placeholder'></input>
+                </view>
+            </view>
+            <view class='input-row'>
+                <view class='input-title'>
+                    <image class='input-icon' mode='widthFix' src='../../Images/id.png'></image>
+                    <view>学号</view>
+                </view>
+                <view class='input-area'>
+                    <input bindinput='setValue' data-id='stuId' placeholder='请输入学号' placeholder-class='input-placeholder'></input>
+                </view>
+            </view>
+            <view class='radio-row'>
+                <view class='radio-title'>
+                    <image class='radio-icon' mode='widthFix' src='../../Images/sex.png'></image>
+                    <view>性别</view>
+                </view>
+                <view class='radio-group'>
+                    <radio-group bindchange='setValue' data-id='stuSex'>
+                        <radio value='男'>男</radio>
+                        <radio value='女'>女</radio>
+                    </radio-group>
+                </view>
+            </view>
+            <view class='input-row'>
+                <view class='input-title'>
+                    <image class='input-icon' mode='widthFix' src='../../Images/phone.png'></image>
+                    <view>电话</view>
+                </view>
+                <view class='input-area'>
+                    <input bindinput='setValue' data-id='stuTel' placeholder='请输入电话号码' placeholder-class='input-placeholder'></input>
+                </view>
+            </view>
+            <view class='radio-row'>
+                <view class='radio-title'>
+                    <image class='input-icon' mode='widthFix' src='../../Images/academical.png'></image>
+                    <view>学院</view>
+                </view>
+                <view class='picker-box'>
+                    <picker bindchange='setValue' data-id='stuCollege' mode='selector' range='{{pagedata.page_5.aca_list}}' class='picker'>
+                        <view class='select-aca-text' wx:if='{{pagedata.page_5.submit_data.stuCollege}}'>{{pagedata.page_5.submit_data.stuCollege}}</view>
+                        <view class='aca-text' wx:if='{{!pagedata.page_5.submit_data.stuCollege}}'>点击选择学院</view>
+                    </picker>
+                </view>
+            </view>
+            <view class='input-row'>
+                <view class='input-title'>
+                    <image class='input-icon' mode='widthFix' src='../../Images/class.png'></image>
+                    <view>班级</view>
+                </view>
+                <view class='input-area'>
+                    <input bindinput='setValue' data-id='stuClass' placeholder='请输入班级' placeholder-class='input-placeholder'></input>
+                </view>
+            </view>
+            <button class='submit-button' open-type='getUserInfo' bindgetuserinfo='page_5_submitInfo'>
+                <text>提交</text>
+            </button>
+        </view>
+
+        <view class='page-6-box' hidden='{{!pagedata.page_6.show}}'>
+            <view class='event-intro'>
+                <scroll-view scroll-y='true' class='event-intro-scroll'>
+                    <text>一、活动简介：</text>
+                    <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;本次新生线下打卡活动，目的是帮助新生更快更好地了解中南大学五大校区，方便新生在初入大学时能够快速地熟悉校园。</text>
+                    <text>二、积分规则：</text>
+                    <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;1. 本次新生打卡程序我们在五大校区共设置了18个打卡地点。根据打卡的难易程度，每个校区的基础分数不同（南校区——30分，新校区和本部——40分，湘雅和铁道——50分）</text>
+                    <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;2. 新生每成功打卡一个地点，可以获得该地点的基础分数和奖励分数，两者之和为此地点获得的总分。奖励分数＝基础分数&nbsp;／10／区间值（由签到顺序划分，1到&nbsp;99名为区间值&nbsp;1，100到&nbsp;199为区间值&nbsp;2，以此类推）。</text>
+                    <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;例如，某同学在新校区鸟巢成功打卡，并且他是第201个在这个地点打卡的同学，那么他此次获得的总分为40+4/3=41.67分。所以，越在前面打卡的同学的分数越高。最终分数为所有地点的分数之和，我们将会根据该分数进行排名。</text>
+                    <text>三、奖励规则</text>
+                    <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;本次打卡我们共设置了5个奖项：特等奖5名，一等奖45名，二等奖100名，三等奖150名，纪念奖200名（奖品数量根据实际得分情况有调整，先到先得），欢迎大家参与本次活动</text> 
+                    <text>四、活动时间</text>
+                    <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;9月8日——9月15日</text>
+                    <text decode='true' style='text-align: center;'>\n本活动最终解释权归升华工作室所有</text>
+                </scroll-view>
+            </view>
+        </view>
+    </view>
+    <view class='page-3-box' hidden='{{!pagedata.page_3.show || !pagedata.page_3.showList}}'>
+        <view class='location-list'>
+            <scroll-view class='scroll-3' scroll-y='true'>
+                <view wx:for='{{pagedata.page_3.location_list}}' wx:key='{{index}}' bindtap='showLocationInfo' data-id='{{index}}' class='location-item'>
+                    <image class='background-page-3' mode='widthFix' src='https://bg-1254412656.cos.ap-chengdu.myqcloud.com/bg-{{index}}.png'></image>
+                    <image class='status-icon' mode='widthFix' src='{{item.status?"../../Images/completed.png":"../../Images/uncompleted.png"}}'></image>
+                    <view class='position'>{{item.position_name}}</view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

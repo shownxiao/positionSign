@@ -1,0 +1,94 @@
+@import '../../app.wxss'
+
+.input-box{
+    display: flex;
+
+    color: #323232;
+    border-bottom: 1px solid rgb(128, 128, 128);
+
+    width: 100%;
+
+    margin: 0.25em;
+}
+
+.textarea{
+    display: flex;
+
+    width: 100%;
+
+
+    padding: 5px;
+    margin: 5px;
+    height: 12em;
+}
+
+.button{
+    color: white;
+    background-color: #58BCF3;
+
+    width: 4em;
+    text-align: center;
+    letter-spacing: 0.5em;
+
+    padding: 5px;
+    box-shadow: 0 5rpx 5rpx 0 rebeccapurple;
+
+    border-radius: 10%;
+}
+
+.button:hover{
+    background-color:rgb(28, 161, 250);
+}
+
+.font-1{
+    font-size: 1.25em;
+}
+
+.light-gray{
+    color: #b2b2b2;
+}
+
+.placeholder{
+    font-size: 1.25em;
+    color: #b2b2b2;
+}
+
+.row{
+    display: flex;
+
+    width: 100%;
+}
+
+.col{
+    display: flex;
+
+    width: 100%;
+}
+
+.col-4{
+    width: 33%;
+}
+
+.col-5{
+    width: 41%;
+}
+
+.col-7{
+    width: 59%;
+}
+
+.col-8{
+    width: 66%;
+}
+
+.center{
+    justify-content: center;
+}
+
+.w-8{
+    width: 80%;
+}
+
+.h-8{
+    height: 80%;
+}

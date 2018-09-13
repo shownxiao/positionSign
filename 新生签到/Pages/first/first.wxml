@@ -1,0 +1,45 @@
+<view class='bg'>
+    <image class='bg-image' src='../../Images/first-bg.jpg'></image>
+</view>
+<view class='container'>
+    <view class='item-box'>
+        <view class='row'>
+            <view  class='col' bindtap='change_page' data-id='0'>
+                <image class='icon' mode='widthFix' src='../../Images/first-1.png'></image>
+                <view class='text'>地点打卡</view>
+            </view>
+            <view  class='col' bindtap='change_page' data-id='1'>
+                <image class='icon' mode='widthFix' src='../../Images/first-2.png'></image>
+                <view class='text'>个人信息</view>
+            </view>
+        </view>
+        <view class='row'>
+            <view  class='col' bindtap='change_page' data-id='2'>
+                <image class='icon' mode='widthFix' src='../../Images/first-3.png'></image>
+                <view class='text'>地点信息</view>
+            </view>
+            <view  class='col' bindtap='change_page' data-id='3'>
+                <image class='icon' mode='widthFix' src='../../Images/first-4.png'></image>
+                <view class='text'>用户排名</view>
+            </view>
+        </view>
+        <view class='row'>
+            <view  class='col' bindtap='change_page' data-id='4'>
+                <image class='icon' mode='widthFix' src='../../Images/first-5.png'></image>
+                <view class='text'>信息绑定</view>
+            </view>
+            <view  class='col' bindtap='change_page' data-id='5'>
+                <image class='icon' mode='widthFix' src='../../Images/first-6.png'></image>
+                <view class='text'>活动介绍</view>
+            </view>
+        </view>
+    </view>
+    <view class='bottom'>
+        <view class='feedback'>
+            <text catchtap='onToProblem'>问题反馈</text>
+        </view>
+        <view class='copyright'>
+            <text>Copyright © 2001-2018 升华工作室</text>
+        </view>
+    </view>
+</view>

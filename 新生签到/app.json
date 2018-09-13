@@ -1,0 +1,20 @@
+{
+    "pages": [
+        
+        "Pages/first/first",
+        "Pages/info/info",
+        "Pages/map/map",
+               
+        "Pages/index/index",
+        
+        "Pages/questions/questions"
+        
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#2196f3",
+        "navigationBarTextStyle": "#2196f3",
+        "backgroundColor": "#2196f3",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    }
+}

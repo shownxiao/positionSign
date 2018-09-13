@@ -1,0 +1,609 @@
+page {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+}
+
+::-webkit-scrollbar{
+    width: 10rpx;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: #bebebe;
+}
+
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: #EDEDED;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.bg {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-image {
+    height: 100%;
+    width: 100%;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.title-box>view {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: rgb(189, 189, 189);
+    border-width: 1px 1px 1px 0;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 0.63em;
+}
+
+.cube-0 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 4.5%;
+    background-color: white;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.cube-1 {
+    position: absolute;
+    top: 14.5%;
+    left: 5%;
+    width: 90%;
+    height: 20.5%;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.cube-2 {
+    display: flex;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 90%;
+    height: 56%;
+}
+
+.cube-2>image, cube-1>image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cube-1>view.box, .cube-2>view.box {
+    position: absolute;
+}
+
+.box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+}
+
+.sign-button {
+    position: absolute;
+    width: 60%;
+    height: 12%;
+    top: 70%;
+    left: 20%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*page-1*/
+.page-1-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-position-selector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9em;
+    height: 70rpx;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    margin-bottom: 20rpx;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(224, 228, 228);
+    background-color: rgb(105, 170, 128);
+    border-radius: 35rpx;
+}
+
+/*page-2*/
+
+.log-box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    height: 250rpx;
+    width: 250rpx;
+    left: 10%;
+    top: 50%;
+    margin-top: -125rpx;
+}
+
+.completed_number {
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    line-height: 2em;
+    margin: -1em;
+    font-size: 0.75em;
+    color: #888;
+}
+
+.info-box {
+    position: absolute;
+    width: 75%;
+    height: 60%;
+    top: 5%;
+    left: 25%;
+}
+
+.info-text {
+    font-size: 36rpx;
+    margin: 10rpx;
+    color: #888;
+}
+
+
+/*page-3*/
+
+.page-3-box{
+    position: absolute;
+    width: 90%;
+    height: 76.5%;
+
+    top: 14.5%;
+    left: 5%;
+
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+.location-list{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+
+    left: 2.5%;
+    top: 2.5%;
+}
+
+.scroll-3{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.location-item{
+    display: flex;
+
+    width: 95%;
+    height: 20%;
+
+    margin-bottom: 20rpx;
+
+    align-items: center;
+}
+
+.background-page-3{
+    position: absolute;
+    width: 100%;
+}
+
+.bg-item-page-3{
+    position: absolute;
+
+    width: 50%;
+}
+
+.status-icon{
+    position: absolute;
+
+    width: 25%;
+
+    right: 20rpx;
+}
+
+.position{
+    display: flex;
+
+    font-size: 1em;
+    width: 5em;
+    height: 1.25em;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    margin-left: 45%;
+    color: black;
+
+    z-index: 1;
+}
+
+
+
+/*page-4*/
+
+.list-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.list-image {
+    position: absolute;
+    width: 400rpx;
+    left: 50%;
+    top: 50%;
+    margin-top: -90rpx;
+    margin-left: -200rpx;
+}
+
+.scroll-4 {
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    top: 5%;
+    bottom: 10%;
+    left: 7%;
+    background-color: white;
+}
+
+.list-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    height: 120rpx;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.self-row{
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 77%;
+    height: 120rpx;
+    bottom: 13%;
+
+    border-radius: 20rpx;
+    background-color: white;
+
+    box-shadow: 0 0 0 2px rgb(105, 170, 128);
+}
+
+.icon {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.list-num {
+    width: 60rpx;
+    height: 60rpx;
+    color: red;
+    text-align: center;
+}
+
+.face {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 0;
+    margin-left: 5px;
+}
+
+.username {
+    font-size: 0.8em;
+    margin-left: 3px;
+    width: 6em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.completed-text {
+    font-size: 0.75em;
+    text-align: center;
+    flex-grow: 1;
+    margin-left: 4px;
+}
+
+/*page-5*/
+
+.welcome-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome-image {
+    position: absolute;
+    width: 100%;
+}
+
+.form-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.input-row {
+    position: relative;
+    width: 80%;
+    height: 70rpx;
+    left: 10%;
+    margin-top: 15rpx;
+}
+
+.input-title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 5em;
+    background-color: rgb(105, 170, 128);
+    color: white;
+    border-top-left-radius: 50rpx;
+    border-bottom-left-radius: 50rpx;
+}
+
+.input-icon {
+    width: 60rpx;
+    margin-right: 10rpx;
+}
+
+.input-area {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    left: 4.5em;
+    background-color: rgb(208, 242, 205);
+    border-top-right-radius: 50rpx;
+    border-bottom-right-radius: 50rpx;
+    overflow: hidden;
+}
+
+
+.input-area input {
+    height: 100%;
+}
+
+.input-placeholder {
+    color: rgb(189, 189, 189);
+    background-color: rgb(208, 242, 205);
+}
+
+.radio-row {
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 70rpx;
+    left: 10%;
+    margin-top: 15rpx;
+}
+
+
+.radio-title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 4.5em;
+    height: 70rpx;
+    background-color: rgb(105, 170, 128);
+    border-radius: 50rpx;
+    color: white;
+}
+
+
+.radio-title view {
+    text-align: center;
+}
+
+.radio-icon {
+    width: 60rpx;
+}
+
+.radio-group {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    height: 70rpx;
+    width: 250rpx;
+    background-color: rgb(208, 242, 205);
+    border-radius: 50rpx;
+}
+
+
+.radio-group radio {
+    margin-left: 20rpx;
+}
+
+.picker-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    height: 70rpx;
+    width: 8em;
+    background-color: rgb(208, 242, 205);
+    border-radius: 50rpx;
+}
+
+.aca-text, .select-aca-text{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    width: 6em;
+}
+
+.aca-text{
+    color: rgb(189, 189, 189);
+}
+
+.select-aca-text{
+    color: black;
+}
+
+.submit-button {
+    position: absolute;
+    width: 200rpx;
+    height: 70rpx;
+    left: 50%;
+    top: 480rpx;
+    margin-left: -100rpx;
+    margin-top: 50rpx;
+
+    background-color: rgb(105, 170, 128);
+    border-radius: 5rpx;
+    border-color: rgb(105, 170, 128);
+}
+
+
+.submit-button image {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.submit-button text {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 2em;
+    height: 1.5em;
+    margin-left: -1.25em;
+    margin-top: -1.25em;
+    color: white;
+}
+
+
+/*page-6*/
+.intro-title{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.intro-title image{
+    width: 100%;
+}
+
+.page-6-box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.intro-image{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: 50rpx;
+}
+
+.event-intro{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 0 0 8px 8px;
+}
+
+.event-intro-scroll{
+    width: 100%;
+    height: 650rpx;
+
+    padding-left: 18rpx;
+    padding-right: 18rpx;
+}
+
+.event-intro-scroll text{
+    display: block;
+    font-size: 36rpx;
+    line-height: 60rpx;
+}

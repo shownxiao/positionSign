@@ -1,0 +1,28 @@
+<view class='bg'>
+    <image class='bg-image' src='../../Images/bg-index.png'></image>
+</view>
+<view class='container'>
+    <view class='cube-1'>
+        <view class='location-info-box'>
+            <view class='location-name'>{{data.position}}</view>
+            <view class='rank-info'>
+                <view wx:if='{{data.msg}}' class='text'>排名：{{data.order}}</view>
+                <view wx:if='{{data.msg}}' class='text'>分数：{{data.score}}</view>
+                <view wx:if='{{!data.msg}}' class='text'>还未签到</view>
+            </view>
+            <view class='plane-box' bindtap='toMap'>
+                <image mode='widthFix' class='plane' src='/Images/plane.png'></image>
+            </view>
+        </view>
+    </view>
+    <view class='cube-2'>
+        <image src='../../Images/item-index-2.png'></image>
+        <view class='img-text-box'>
+            <image mode='widthFix' src='https://bg-1254412656.cos.ap-chengdu.myqcloud.com/{{data.id}}.jpg'></image>
+            <scroll-view class='scroll-text' scroll-y='true'>
+                <text decode='true'>{{data.introduction}}</text>
+            </scroll-view>
+        </view>
+    </view>
+
+</view>

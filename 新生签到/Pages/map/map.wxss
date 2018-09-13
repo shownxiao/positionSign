@@ -1,0 +1,42 @@
+
+.focus-button, .walk-button, .bike-button, .all-button{
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100rpx;
+    height: 100rpx;
+
+    right: 30rpx;
+
+    border-radius: 70rpx;
+    background-color: white;
+}
+
+.focus-button{
+    bottom: 100rpx;
+}
+
+.bike-button{
+    top: 425rpx;
+}
+
+.walk-button{
+    top: 300rpx;
+}
+
+.all-button{
+    bottom: 225rpx;
+}
+
+.all_button .icon-image{
+    height: 60%;
+    width: 60%;
+}
+
+.icon-image{
+    height: 80%;
+    width: 80%;
+}

@@ -1,0 +1,17 @@
+<map id="map" longitude="{{longitude}}" polyline='{{polyline}}' scale="{{scale}}" latitude="{{latitude}}" markers='{{markers}}' circles='{{circles}}'  show-location bindcallouttap='to_sign' style="width: 100%; height: 100%;">
+
+<cover-view class='focus-button' bindtap='focus_self'>
+    <cover-image mode='widthFix' class='icon-image' src='../../Images/focus.png'></cover-image>
+</cover-view>
+<cover-view class='walk-button' bindtap='show_walk_path'>
+    <cover-image mode='widthFix' class='icon-image' src='../../Images/walk.png'></cover-image>
+</cover-view>
+<cover-view class='bike-button' bindtap='show_bike_path'>
+    <cover-image mode='widthFix' class='icon-image' src='../../Images/bike.png'></cover-image>
+</cover-view>
+<cover-view class='all-button' bindtap='show_all_point'>
+    <cover-image mode='widthFix' class='icon-image' src='../../Images/all.png'></cover-image>
+</cover-view>
+
+
+</map>

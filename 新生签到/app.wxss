@@ -1,0 +1,31 @@
+page{
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-self: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+.bg{
+    height: 100%;
+    width: 100%;
+    
+    position: fixed;
+    z-index: -1;
+}
+
+.bg-image{
+    height: 100%;
+    width: 100%;
+}
